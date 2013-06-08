@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<swc xmlns="http://www.adobe.com/flash/swccatalog/9">
+  <versions>
+    <swc version="1.2" />
+    <flex version="4.6.0" build="23201" minimumSupportedVersion="3.0.0" />
+  </versions>
+  <features>
+    <feature-script-deps />
+    <feature-files />
+  </features>
+  <libraries>
+    <library path="library.swf">
+      <script name="com/downjoy/ane/DLEvents" mod="1370676889421" signatureChecksum="1506248869" >
+        <def id="com.downjoy.ane:DLEvents" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="com/downjoy/ane/DLExtension" mod="1370677994187" signatureChecksum="3397859540" >
+        <def id="com.downjoy.ane:DLExtension" /> 
+        <dep id="flash.events:StatusEvent" type="e" /> 
+        <dep id="flash.external:ExtensionContext" type="e" /> 
+        <dep id="flash.events:IEventDispatcher" type="s" /> 
+        <dep id="flash.events:StatusEvent" type="s" /> 
+        <dep id="flash.external:ExtensionContext" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:EventDispatcher" type="i" /> 
+      </script>
+      <script name="_13a97ea1fcc8440c10d95cb6aee6e0313d561ee3907ee4911ec0916407864ed2_flash_display_Sprite" mod="1370677996156" signatureChecksum="1609202211" >
+        <def id="_13a97ea1fcc8440c10d95cb6aee6e0313d561ee3907ee4911ec0916407864ed2_flash_display_Sprite" /> 
+        <dep id="flash.system:Security" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.display:Sprite" type="i" /> 
+      </script>
+      <digests>
+        <digest type="SHA-256" signed="false" value="66cc128b0c3fce43226845b41b1b8e2f6dc9e19b1179eb44d50ee94faabb779a"   />
+      </digests>
+    </library>
+  </libraries>
+  <files>
+  </files>
+</swc>
