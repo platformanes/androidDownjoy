@@ -20,16 +20,16 @@ public class DLenterUserInfo implements FREFunction {
 		_context = context; 
 		if(DLInitHandle.downjoy == null)
 			DLInitHandle.initSDK(TAG,_context.getActivity());
-		
+
 		DLInitHandle.downjoy.openMemberCenterDialog(_context.getActivity(), new CallbackListener() {
 
-            @Override
-            public void onError(Error error) {
-                String errorMessage=error.getMessage();
-                _context.dispatchStatusEventAsync(TAG, "onError:" + errorMessage);
-            }
-        });
-		
+			@Override
+			public void onError(Error error) {
+				String errorMessage=error.getMessage();
+				_context.dispatchStatusEventAsync(TAG, "onError:" + errorMessage);
+			}
+		});
+
 		return null;
 	}
 

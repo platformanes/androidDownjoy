@@ -18,6 +18,7 @@ import com.downjoy.ane.DLInitHandle;
 public class DLPay implements FREFunction {
 	private String TAG = "DLPay";
 	private FREContext _context;
+	
 	@Override
 	public FREObject call(final FREContext context, FREObject[] $args) {
 		// TODO Auto-generated method stub
@@ -25,6 +26,7 @@ public class DLPay implements FREFunction {
 		FREObject result = null; 
 		String CpOrderId = null;
 		String rmb = null;
+		String productName = "元宝(1元 = 10 元宝)"; // 商品名称
 		Log.d(TAG, "---------用户付费-------");
 		if($args.length<1)
 		{
@@ -36,6 +38,7 @@ public class DLPay implements FREFunction {
 			FREArray __array = (FREArray) $args[0];
 			CpOrderId = __array.getObjectAt(0).getAsString();
 			rmb = __array.getObjectAt(1).getAsString();
+			productName = __array.getObjectAt(2).getAsString();
 			//call back string
 		}catch (Exception e) { 
 			// TODO: handle exception
@@ -46,7 +49,7 @@ public class DLPay implements FREFunction {
 		try {
 
 			float money = Integer.parseInt(rmb);//0.1f; // 商品价格，单位：元
-			String productName="元宝(1元 = 10 元宝)"; // 商品名称
+			
 			String extInfo = CpOrderId; // CP自定义信息，多为CP订单号
 
 			// 打开支付界面,获得订单号

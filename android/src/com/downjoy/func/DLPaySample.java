@@ -21,7 +21,7 @@ public class DLPaySample implements FREFunction {
 		_context = context; 
 		FREObject result = null; 
 		
-		float money=0.01f; // 商品价格，单位：元
+		float money = 0.0f; // 商品价格，单位：元
         String productName="测试商品"; // 商品名称
         String extInfo="1234"; // CP自定义信息，多为CP订单号
 
